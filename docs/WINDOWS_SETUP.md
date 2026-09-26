@@ -54,3 +54,5 @@ Screenshots are not yet captured. The tiny sample dataset demonstrates the tunin
 The local backup is in `backups/TransportationDB_full.bak`. Backups and `.env` are excluded from Git.
 
 The monitoring script also used SELECT aliases inside an ORDER BY expression; this was corrected to use the underlying index-usage columns. All monitoring batches passed after correction.
+
+Open docs/operational-query.sqlplan in SSMS to inspect the captured actual execution plan.

@@ -52,4 +52,5 @@ See `VERIFICATION_RESULTS.txt` and repeat the read-only checks with `sql/11_veri
 Screenshots are not yet captured. The tiny sample dataset demonstrates the tuning workflow; it does not establish a production-scale speed improvement.
 
 The local backup is in `backups/TransportationDB_full.bak`. Backups and `.env` are excluded from Git.
-`nThe monitoring script also used SELECT aliases inside an ORDER BY expression; this was corrected to use the underlying index-usage columns. All monitoring batches passed after correction.
+
+The monitoring script also used SELECT aliases inside an ORDER BY expression; this was corrected to use the underlying index-usage columns. All monitoring batches passed after correction.

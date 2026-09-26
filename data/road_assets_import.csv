@@ -1,0 +1,7 @@
+RouteNumber,County,MileStart,MileEnd,SurfaceType,ConditionRating,Status,LastInspectionDate
+MO-17,Texas,42.10,47.60,Asphalt,6,Active,2026-07-18
+US-63,Phelps,170.20,176.90,Concrete,7,Active,2026-08-02
+MO-100,Franklin,10.00,14.75,Asphalt,5,Active,2026-06-29
+US-60,Butler,250.50,256.00,Concrete,8,Active,2026-09-05
+MO-72,Cape Girardeau,5.25,11.10,Asphalt,4,Restricted,2026-08-11
+I-55,Cape Girardeau,90.00,96.75,Concrete,7,Active,2026-09-07

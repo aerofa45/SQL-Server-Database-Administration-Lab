@@ -1,0 +1,45 @@
+Changed database context to 'TransportationDB'.
+name|state_desc|recovery_model_desc
+----|----------|-------------------
+TransportationDB|ONLINE|SIMPLE
+TransportationDB_RecoveryTest|ONLINE|SIMPLE
+TableName|RowCount
+---------|--------
+RoadAsset|11
+WorkOrder|4
+Recovered RoadAsset|11
+Recovered WorkOrder|4
+name|type_desc
+----|---------
+usp_CloseWorkOrder|SQL_STORED_PROCEDURE
+usp_CreateWorkOrder|SQL_STORED_PROCEDURE
+usp_GetRoadMaintenanceHistory|SQL_STORED_PROCEDURE
+CrewMember|USER_TABLE
+Employee|USER_TABLE
+Inspection|USER_TABLE
+MaintenanceCrew|USER_TABLE
+RoadAsset|USER_TABLE
+RoadAssetImport|USER_TABLE
+WorkOrder|USER_TABLE
+WorkOrderHistory|USER_TABLE
+vw_MaintenanceSummary|VIEW
+vw_OpenWorkOrders|VIEW
+vw_RoadAssetCondition|VIEW
+WorkOrderID|RouteNumber|County|WorkType|Status|RequestedDate|ScheduledDate|CrewName|EstimatedCost
+-----------|-----------|------|--------|------|-------------|-------------|--------|-------------
+1|MO-179|Cole|Pavement Repair|Scheduled|2026-09-02|2026-09-27|Central Pavement Crew|18500.00
+2|MO-94|Callaway|Drainage Repair|Open|2026-09-05|NULL|Central Pavement Crew|32000.00
+4|I-70|Boone|Joint Repair|In Progress|2026-09-10|2026-09-20|Bridge Response Crew|42000.00
+WorkOrderID|WorkType|Status|RequestedDate|CompletedDate|EstimatedCost|ActualCost
+-----------|--------|------|-------------|-------------|-------------|----------
+3|Crack Sealing|Completed|2026-08-18|NULL|9000.00|8650.00
+DemoUser|CanReadView|CanUpdateWorkOrder
+--------|-----------|------------------
+demo_analyst|1|0
+DemoUser|CanUpdateWorkOrder|CanControlDatabase
+--------|------------------|------------------
+demo_operations|1|0
+DemoUser|CanControlDatabase
+--------|------------------
+demo_dba|1
+Both database integrity checks completed.

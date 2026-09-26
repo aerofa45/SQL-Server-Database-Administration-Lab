@@ -1,0 +1,20 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: transportation-sqlserver
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "${MSSQL_SA_PASSWORD}"
+      MSSQL_PID: "Developer"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+      - ./data:/var/opt/mssql/import
+      - ./backups:/var/opt/mssql/backups
+      - ./sql:/project/sql
+      - ./scripts:/project/scripts
+    restart: unless-stopped
+
+volumes:
+  sqlserver_data:

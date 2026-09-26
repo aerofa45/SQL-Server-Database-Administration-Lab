@@ -174,15 +174,7 @@ A controlled migration adds:
 
 The migration includes idempotency checks so it can be safely rerun.
 
-## Resume Description
-
-**SQL Server Database Administration Lab — SQL Server, T-SQL, Docker, Linux**
-
-Built and administered a transportation asset management database using SQL Server and T-SQL. Implemented role-based access control, database users and permissions, CSV data import, backup and recovery, integrity checks, performance monitoring, indexing, query tuning, and controlled schema migration. Created operational runbooks covering database maintenance, troubleshooting, security, and recovery procedures.
-
-## Skills Demonstrated
-
-`SQL Server` `T-SQL` `Database Administration` `SQL` `RBAC` `Backup & Restore` `Performance Monitoring` `Indexing` `Query Tuning` `Data Import` `Schema Migration` `Docker` `Linux` `Technical Documentation`
+`Linux` `Technical Documentation`
 
 ## Windows setup and verification
 
